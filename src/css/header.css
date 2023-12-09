@@ -19,3 +19,45 @@
 .nav-link:focus {
   color: #747bff;
 }
+.list-link {
+  font-size: 25px;
+  color: blueviolet;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  display: block;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.value {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.label {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.btn-inactive {
+  pointer-events: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+}
+.label-del {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+}

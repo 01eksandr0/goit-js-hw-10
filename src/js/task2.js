@@ -1,0 +1,34 @@
+const createPromise = (delay, good) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (good) {
+        resolve(delay);
+      } else {
+        reject(delay);
+      }
+    }, delay);
+  })
+    .then(delay => {
+      iziToast.success({
+        title: 'OK',
+        message: `✅ Fulfilled promise in ${delay}ms`,
+        position: 'topCenter',
+      });
+    })
+    .catch(delay => {
+      iziToast.error({
+        message: `❌ Rejected promise in ${delay}ms`,
+        position: 'center',
+      });
+    });
+};
+
+const form = document.querySelector('.form');
+let trueFalse = true;
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  if (form.state.value === 'rejected') trueFalse = false;
+  createPromise(form.delay.value, trueFalse);
+  form.reset();
+  trueFalse = true;
+});
