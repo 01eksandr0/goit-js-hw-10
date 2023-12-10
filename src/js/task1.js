@@ -1,6 +1,5 @@
 import flatpickr from 'flatpickr';
-// Додатковий імпорт стилів
-import '../css/iziToast.min.css';
+
 // function
 function convertMs(ms) {
   // Number of milliseconds per unit of time
