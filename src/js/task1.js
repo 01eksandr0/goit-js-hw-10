@@ -22,6 +22,7 @@ function convertMs(ms) {
 function padStartedNumber(n) {
   return `${n}`.padStart(2, 0);
 }
+
 // ===============================================
 
 const btnStartEl = document.querySelector('[data-start]');
