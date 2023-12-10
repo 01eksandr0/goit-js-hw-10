@@ -24,9 +24,10 @@ const createPromise = (delay, good) => {
 };
 
 const form = document.querySelector('.form');
-let trueFalse = true;
+
 form.addEventListener('submit', event => {
   event.preventDefault();
+  let trueFalse = true;
   if (form.state.value === 'rejected') trueFalse = false;
   createPromise(form.delay.value, trueFalse);
   form.reset();
