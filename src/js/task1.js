@@ -1,5 +1,3 @@
-import flatpickr from 'flatpickr';
-
 // function
 function convertMs(ms) {
   // Number of milliseconds per unit of time
