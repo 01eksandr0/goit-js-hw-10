@@ -6,7 +6,7 @@ function convertMs(ms) {
   const hour = minute * 60;
   const day = hour * 24;
 
-  // Remaining day
+  // Remaining days
   const days = Math.floor(ms / day);
 
   // Remaining hours
@@ -22,7 +22,6 @@ function convertMs(ms) {
 function padStartedNumber(n) {
   return `${n}`.padStart(2, 0);
 }
-
 // ===============================================
 
 const btnStartEl = document.querySelector('[data-start]');
